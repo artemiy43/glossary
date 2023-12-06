@@ -64,4 +64,16 @@
     gap: 30px;
   }
 }
+
+@media (max-width: 1050px) {
+  .header--link {
+    width: 120px;
+    height: 95px;
+    font-size: 14px;
+  }
+  .header--logo {
+    width: 120px;
+    height: 95px;
+  }
+}
 </style>

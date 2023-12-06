@@ -22,7 +22,7 @@ import terms from "../mocks/terms.json";
 }
 
 .card {
-  // width: 300px;
+  min-width: 300px;
   min-height: 200px;
   border-radius: 20px;
   padding: 0 20px;
@@ -31,10 +31,29 @@ import terms from "../mocks/terms.json";
   background-color: rgb(53, 63, 70);
   color: white;
   border: 1px solid black;
+  word-wrap: break-word;
 }
 .card:hover {
   background-color: rgb(255, 255, 255);
   color: black;
   border: 1px solid black;
+}
+
+@media (max-width: 1900px) {
+  .card_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 1050px) {
+  .card_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .card_list {
+    grid-template-columns: 1fr;
+  }
 }
 </style>
