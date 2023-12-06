@@ -22,7 +22,7 @@ import terms from "../mocks/terms.json";
 }
 
 .card {
-  min-width: 300px;
+  max-width: 300px;
   min-height: 200px;
   border-radius: 20px;
   padding: 0 20px;
@@ -48,12 +48,23 @@ import terms from "../mocks/terms.json";
 @media (max-width: 1050px) {
   .card_list {
     grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    gap: 0;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 980px) {
   .card_list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 300px;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .card {
+    max-width: 310px;
+    min-height: 200px;
+    border-radius: 20px;
+    margin: 0;
   }
 }
 </style>

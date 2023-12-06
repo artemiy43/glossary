@@ -9,6 +9,6 @@
   background-image: url("../assets/граф.PNG");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 </style>
